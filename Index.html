@@ -1,0 +1,272 @@
+<!<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MI Networks – Professional IT & Tech Solutions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    :root {
+      --dark-bg: #0b0c1a; /* Very dark blue-purple, nearly black */
+      --accent: #5d5fef; /* Soft radiant accent for contrast */
+      --text-light: #f0f4ff;
+      --card-bg: #121428;
+      --border: #2a2d45;
+    }
+
+    body {
+      background-color: var(--dark-bg);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(145deg, #0a0b17, #100f22);
+      color: var(--text-light);
+      padding: 2.5rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.85;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      margin-bottom: 3.5rem;
+    }
+
+    h2 {
+      font-size: 2.1rem;
+      margin-bottom: 1.4rem;
+      color: var(--accent);
+      position: relative;
+      padding-bottom: 0.4rem;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    h3 {
+      color: #b0b8e0;
+      margin: 1.3rem 0 0.7rem;
+      font-size: 1.35rem;
+    }
+
+    ul {
+      padding-left: 1.6rem;
+      margin-top: 0.6rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.8rem;
+      margin-top: 1.5rem;
+    }
+
+    .service-card {
+      background: var(--card-bg);
+      padding: 1.8rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 18px rgba(93, 95, 239, 0.15);
+    }
+
+    .contact-section {
+      background: var(--card-bg);
+      padding: 2.5rem;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.9rem 1.8rem;
+      background: transparent;
+      color: var(--text-light);
+      border: 2px solid var(--accent);
+      border-radius: 50px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .contact-btn:hover {
+      background: var(--accent);
+      transform: scale(1.05);
+    }
+
+    .availability {
+      margin-top: 1.4rem;
+      font-style: italic;
+      opacity: 0.8;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #090a15;
+      color: #8a92b2;
+      font-size: 0.95rem;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.1rem;
+      }
+      .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      .contact-btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MI Networks</h1>
+    <p>End-to-End IT & Technology Solutions – Reliable, Secure, and Future-Ready</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3><i class="fas fa-computer"></i> Windows & PC Support</h3>
+          <ul>
+            <li>Fresh Windows installation & dual-boot setups</li>
+            <li>Virus, malware, and spyware removal</li>
+            <li>System performance optimization</li>
+            <li>Data recovery & secure backup solutions</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3><i class="fas fa-network-wired"></i> Networking & Internet</h3>
+          <ul>
+            <li>Wi-Fi 6/7 deployment & optimization</li>
+            <li>Home and office network design</li>
+            <li>Internet connectivity troubleshooting</li>
+            <li>Router, switch, and access point configuration</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3><i class="fas fa-video"></i> CCTV & Surveillance</h3>
+          <ul>
+            <li>IP & analog CCTV system installation</li>
+            <li>Remote viewing setup (mobile/desktop)</li>
+            <li>NVR/DVR configuration & maintenance</li>
+            <li>Night vision & motion detection tuning</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3><i class="fas fa-house"></i> Smart Home Integration</h3>
+          <ul>
+            <li>Smart lighting, locks, and climate control</li>
+            <li>Voice assistant ecosystems (Google/Alexa)</li>
+            <li>Automated scenes and scheduling</li>
+            <li>Secure local & cloud control panels</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3><i class="fas fa-tools"></i> General IT & Tech Support</h3>
+          <ul>
+            <li>Printer, scanner, and peripheral setup</li>
+            <li>Email, cloud, and collaboration tools</li>
+            <li>Remote diagnostics & on-site support</li>
+            <li>Custom solutions for unique challenges</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <div class="contact-section">
+        <p>Need help with your tech? Reach out anytime—responses guaranteed during service hours.</p>
+        
+        <div class="contact-buttons">
+          <a href="mailto:mohamed.a.s.ibrahim.9.2.i@gmail.com" class="contact-btn">
+            <i class="fas fa-envelope"></i> Email Us
+          </a>
+          <a href="https://wa.me/601160929841" target="_blank" class="contact-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+
+        <p class="availability">Available for contact daily from 9:00 AM to 9:00 PM (Malaysia Time)</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 MI Networks. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
